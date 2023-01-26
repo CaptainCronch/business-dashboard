@@ -27,4 +27,8 @@ header nav, header div {
 nav a:first-child {
   background-color: white;
   color: black;
+}
+
+main {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
