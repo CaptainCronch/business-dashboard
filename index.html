@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <a href="#">Dashboard</a>
+            <a id="dashboard" href="#">Dashboard</a>
             <a href="#">Projects</a>
             <a href="#">Time Tracker</a>
             <a href="#">Team</a>
@@ -19,20 +19,22 @@
             <a href="#">In Backlog</a>
             <a href="#">In Progress</a>
             <a href="#">Done</a>
-            <a href="#">+ Add Project</a>
-            <img src="" alt="Profile Icon">
+            <a id="add-project" href="#">+ Add Project</a>
+            <img src="profiles-top.png" alt="Profile Icon">
         </div>
     </header>
     <main>
-        <div class="top-area">
+        <div class="top-area area">
             <div class="top-bar">
                 <h3>Projects</h3>
                 <a href="#">All Projects &rarr;</a>
             </div>
             <div class="widgets">
                 <div class="widget primary">
-                    <div class="color-square 1"></div>
-                    <h4>Suzzie</h4>
+                    <div class="title">
+                        <div class="color-square one"></div>
+                        <h4>Suzzie</h4>
+                    </div>
                     <div class="time">
                         <div class="left">
                             <p class="hours">310 h</p>
@@ -44,27 +46,29 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <div class="progess-made"></div>
+                        <div id="progress-made"></div>
                         <div class="progress-left"></div>
                     </div>
                     <div class="date-box">
                         <div class="left">
-                            <p class="title">start</p>
+                            <p class="subtitle">start</p>
                             <p class="date">May 25</p>
                         </div>
                         <div class="right">
-                            <p class="title">due date</p>
+                            <p class="subtitle">due date</p>
                             <p class="date">April 25</p>
                         </div>
                     </div>
                     <div class="people">
-                        <div class="profiles"></div>
+                        <div class="profiles one"></div>
                         <p class="add-people">+1</p>
                     </div>
                 </div>
                 <div class="widget">
-                    <div class="color-square 2"></div>
-                    <h4>PR Verse</h4>
+                    <div class="title">
+                        <div class="color-square two"></div>
+                        <h4>PR Verse</h4>
+                    </div>
                     <div class="time">
                         <div class="left">
                             <p class="hours">98 h</p>
@@ -76,26 +80,29 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <div class="progess-made"></div>
+                        <div id="progress-made"></div>
                         <div class="progress-left"></div>
                     </div>
                     <div class="date-box">
                         <div class="left">
-                            <p class="title">start</p>
+                            <p class="subtitle">start</p>
                             <p class="date">Mar 17</p>
                         </div>
                         <div class="right">
-                            <p class="title">due date</p>
+                            <p class="subtitle">due date</p>
                             <p class="date">May 31</p>
                         </div>
                     </div>
                     <div class="people">
-                        <div class="profiles"></div>
+                        <div class="profiles two"></div>
+                        <p class="add-people">+1</p>
                     </div>
                 </div>
                 <div class="widget">
-                    <div class="color-square 3"></div>
-                    <h4>Healhees'</h4>
+                    <div class="title">
+                        <div class="color-square three"></div>
+                        <h4>Healhees'</h4>
+                    </div>
                     <div class="time">
                         <div class="left">
                             <p class="hours">211 h</p>
@@ -107,26 +114,29 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <div class="progess-made"></div>
+                        <div id="progress-made"></div>
                         <div class="progress-left"></div>
                     </div>
                     <div class="date-box">
                         <div class="left">
-                            <p class="title">start</p>
+                            <p class="subtitle">start</p>
                             <p class="date">Dec 9</p>
                         </div>
                         <div class="right">
-                            <p class="title">due date</p>
+                            <p class="subtitle">due date</p>
                             <p class="date">June 11</p>
                         </div>
                     </div>
                     <div class="people">
-                        <div class="profiles"></div>
+                        <div class="profiles three"></div>
+                        <p class="add-people">+1</p>
                     </div>
                 </div>
                 <div class="widget">
-                    <div class="color-square 4"></div>
-                    <h4>Magic Soft</h4>
+                    <div class="title">
+                        <div class="color-square four"></div>
+                        <h4>Magic Soft</h4>
+                    </div>
                     <div class="time">
                         <div class="left">
                             <p class="hours">146 h</p>
@@ -138,26 +148,27 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <div class="progess-made"></div>
+                        <div id="progress-made"></div>
                         <div class="progress-left"></div>
                     </div>
                     <div class="date-box">
                         <div class="left">
-                            <p class="title">start</p>
+                            <p class="subtitle">start</p>
                             <p class="date">May 25</p>
                         </div>
                         <div class="right">
-                            <p class="title">due date</p>
+                            <p class="subtitle">due date</p>
                             <p class="date">April 25</p>
                         </div>
                     </div>
                     <div class="people">
-                        <div class="profiles"></div>
+                        <div class="profiles four"></div>
+                        <p class="add-people">+1</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="left-area">
+        <div class="left-area area">
             <div class="top-bar">
                 <h3>Schedule</h3>
                 <a href="#">Day</a>
@@ -173,7 +184,7 @@
                 <div class="event">
                     <p class="time">10:30</p>
                     <div class="active">
-                        <div class="color-circle 1"></div>
+                        <div class="color-circle one"></div>
                         <h4>Interview with John</h4>
                         <a href="#">Join</a>
                     </div>
@@ -185,18 +196,18 @@
                 </div>
                 <div class="event">
                     <p class="time">14:30</p>
-                    <div class="color-circle 2"></div>
+                    <div class="color-circle two"></div>
                     <h4>Daily Meeting</h4>
                 </div>
                 <div class="event">
                     <p class="time">15:00</p>
-                    <div class="color-circle 3"></div>
+                    <div class="color-circle three"></div>
                     <h4>Kick Off - Ben's Farm</h4>
                 </div>
                 <a class="add-meeting" href="#">+ Add Meeting</a>
             </div>
         </div>
-        <div class="middle-area">
+        <div class="middle-area area">
             <div class="top-bar">
                 <h3>Activity</h3>
                 <a href="#">&lsaquo;</a>
@@ -215,34 +226,34 @@
                 </div>
             </div>
             <ul class="label-list">
-                <li class="label 1">
+                <li class="label one">
                     <div class="color-circle big"></div>
                     <p>Communication</p>
                     <p>121 h</p>
                 </li>
-                <li class="label 2">
+                <li class="label two">
                     <div class="color-circle big"></div>
                     <p>Research</p>
                     <p>68 h</p>
                 </li>
-                <li class="label 3">
+                <li class="label three">
                     <div class="color-circle big"></div>
                     <p>Wireframes</p>
                     <p>54 h</p>
                 </li>
-                <li class="label 4">
+                <li class="label four">
                     <div class="color-circle big"></div>
                     <p>Prototyping</p>
                     <p>27 h</p>
                 </li>
-                <li class="label 5">
+                <li class="label five">
                     <div class="color-circle big"></div>
                     <p>Styles</p>
                     <p>13 h</p>
                 </li>
             </ul>
         </div>
-        <div class="right-area">
+        <div class="right-area area">
             <div class="top-bar">
                 <h3>Tasks</h3>
                 <div class="filter">

@@ -1,42 +1,82 @@
 @use "vars" as *;
 @use "right" as *;
+@use "top" as *;
 
 body{
     background-color: $background-color;
-    margin: 50px;
-    a{
-        text-decoration: none;
-    }
 }
 
 header{
-    background-color:$background-color;
     display: flex;
     justify-content: space-between;
+    margin: 30px 100px;
+    align-items: baseline;
+    height: 50px;
 
     a{
+        font-size: 1.2em;
         color: $text-color-gray;
-        padding: 10px;
-        display: flex;
-        align-items: center;
     }
 
-    nav, div{
-        display: flex;
-        justify-content: space-between;
-        width: 40%;
-    }
-}
-
-nav{
-    a:first-child{
+    #dashboard {
+        padding: 10px 20px;
         background-color: white;
         color: black;
+        margin: 0;
+    }
+    
+    #add-project {
+        margin: 0 80px 0 30px;
+        color: white;
+    }
+
+    nav, .project-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: inherit;
+        flex-grow: 1;
+        height: 100%;
+    }
+    
+    nav {
+        justify-content: left;
+
+        a {
+            margin-left: 50px;
+        }
+    }
+    .project-nav {
+        justify-content: right;
+        
+        a {
+            margin-right: 50px;
+        }
+        img {
+            height: 50px;
+            display: none;
+        }
     }
 }
 
 main{
-    color: white;
     display: flex;
     flex-flow: row wrap;
+}
+
+.area {
+    display: block;
+    padding: 30px 100px;
+}
+
+.top-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    margin-bottom: 30px;
+
+    h3 {
+        margin-right: auto;
+        font-size: 2em;
+    }
+
 }

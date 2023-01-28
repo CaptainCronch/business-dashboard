@@ -6,6 +6,7 @@ $widget-purple-background: #c37dff;
 $widget-darkgray-background: #111012;
 $text-color-light-gray: #cbcacb;
 $text-color-gray: #858485;
+$transparent: rgba(1, 1, 1, 0);
 
 * { /* RESET */
     vertical-align: baseline;
@@ -21,5 +22,9 @@ $text-color-gray: #858485;
     outline: 0;
     padding: 0;
     margin: 0;
-    color: darkgray;
+    color: $text-color-gray;
+}
+
+head, script {
+    display: none;
 }

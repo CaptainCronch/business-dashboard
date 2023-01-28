@@ -1,0 +1,152 @@
+@use "vars" as *;
+
+.top-area {
+    display: block;
+    width: 100%;
+}
+
+.widgets {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.widget {
+    display: block;
+    flex-grow: 1;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: $widget-darkgray-background;
+    color: $text-color-light-gray;
+    box-shadow: 0px 0px 100px -80px rgba(255,255,255,0.6) inset;
+
+    .title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $text-color-gray;
+        margin-bottom: 20px;
+
+        .color-square {
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .one {background-color: black;}
+        .two {background-color: rgb(57, 255, 255);}
+        .three {background-color: rgb(225, 255, 18);}
+        .four {background-color: rgb(254, 137, 27);}
+    
+        h4 {
+            font-size: 2em;
+            display: block;
+        }
+    }
+
+    .time {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .hours {
+            font-size: 2em;
+            display: block;
+        }
+        .subtitle {
+            font-size: 1em;
+        }
+
+        .left {
+            display: block;
+        }
+        .right {
+            display: block;
+            text-align: center;
+            width: 50%;
+            border-left: 1px solid $text-color-gray;
+        }
+    }
+
+    .progress-bar {
+        display: flex;
+        height: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+        #progress-made {
+            display: block;
+            height: 100%;
+            flex-grow: 1;
+            background-color: black;
+            background: linear-gradient(90deg, $transparent 0%, white 100%); 
+        }
+
+        .progress-left {
+            display: block;
+            height: 100%;
+            flex-grow: 1;
+
+            background-image: linear-gradient(135deg, $text-color-gray 25%,
+                    $transparent 25%,
+                    $transparent 50%,
+                    $text-color-gray 50%,
+                    $text-color-gray 75%,
+                    $transparent 75%,
+                    $transparent 100%);
+            
+            background-size: 5.66px 5.66px;
+        }
+    }
+
+    .date-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 20px;
+
+        .subtitle {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .date {
+            color: white;
+        }
+
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+    }
+
+    .people {
+        display: flex;
+        justify-content: left;
+
+        .profiles {
+            background: url("profiles-1.png") no-repeat left top;
+            background-size: auto 100%;
+            width: 100%;
+        }
+        .one{background-image: url("profiles-1.png");}
+        .two{background-image: url("profiles-2.png");}
+        .three{background-image: url("profiles-3.png");}
+        .four{background-image: url("profiles-4.png");}
+
+        .add-people {
+            background-color: black;
+            padding: 17px 20px;
+            border-radius: 50px;
+            visibility: hidden;
+        }
+    }
+}
+
+.widget:last-child {
+    margin-right: 0;
+}
