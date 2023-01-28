@@ -166,6 +166,7 @@ head, script {
 
 body {
   background-color: #000000;
+  width: 100%;
 }
 
 header {
@@ -232,4 +233,85 @@ main {
 .top-bar h3 {
   margin-right: auto;
   font-size: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.suzzie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.suzzie h1 {
+  font-size: 2.5em;
+  padding: 25px;
+}
+.suzzie i {
+  font-size: 2.5em;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  background-color: #e5f374;
+  padding: 25px;
+  border-radius: 25px;
+  width: 90%;
+}
+.card .divider {
+  width: 98%;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+.card .v-divider {
+  width: 2px;
+  background-color: black;
+}
+.card .info {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.card img {
+  width: 33%;
+}
+.card .employee-info {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.card .employee-info p {
+  font-size: 1.5em;
+  padding: 10px;
+}
+.card .progress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card .progress p {
+  font-size: 2.5em;
+}
+.card .progress .bar {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.card .progress .hours-log {
+  height: 50px;
+  width: 90%;
+  background: linear-gradient(90deg, rgba(1, 1, 1, 0) 0%, white 100%);
+}
+.card .progress .estimated {
+  height: 50px;
+  width: 10%;
+  background-image: linear-gradient(135deg, #858485 25%, rgba(1, 1, 1, 0) 25%, rgba(1, 1, 1, 0) 50%, #858485 50%, #858485 75%, rgba(1, 1, 1, 0) 75%, rgba(1, 1, 1, 0) 100%);
 }/*# sourceMappingURL=style.css.map */
