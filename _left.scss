@@ -1,0 +1,11 @@
+@use "vars" as *;
+
+.area.left-area {
+    background-color: $widget-purple-background;
+    flex-grow: 2;
+
+    * {
+        color: white;
+    }
+
+}

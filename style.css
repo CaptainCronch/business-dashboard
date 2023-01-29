@@ -20,9 +20,18 @@ head, script {
   display: none;
 }
 
-.top-area {
+.area.right-area {
+  flex-grow: 2;
+  background-color: white;
+}
+.area.right-area * {
+  color: black;
+}
+
+.area.top-area {
   display: block;
-  width: 100%;
+  flex-basis: 100%;
+  padding-bottom: 50px;
 }
 
 .widgets {
@@ -164,6 +173,21 @@ head, script {
   margin-right: 0;
 }
 
+.area.left-area {
+  background-color: #ba72fe;
+  flex-grow: 2;
+}
+.area.left-area * {
+  color: white;
+}
+
+.area.middle-area {
+  background-color: #f4faff;
+}
+.area.middle-area * {
+  color: black;
+}
+
 body {
   background-color: #000000;
 }
@@ -204,13 +228,16 @@ header nav a {
 }
 header .project-nav {
   justify-content: right;
+  align-items: flex-end;
 }
 header .project-nav a {
   margin-right: 50px;
 }
 header .project-nav img {
   height: 50px;
-  display: none;
+  align-self: flex-end;
+  position: relative;
+  top: 10px;
 }
 
 main {
@@ -219,8 +246,9 @@ main {
 }
 
 .area {
-  display: block;
   padding: 30px 100px;
+  flex-shrink: 1;
+  flex-basis: 20%;
 }
 
 .top-bar {
@@ -232,4 +260,8 @@ main {
 .top-bar h3 {
   margin-right: auto;
   font-size: 2em;
+}
+.top-bar a, .top-bar p {
+  margin-left: 15px;
+  font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */

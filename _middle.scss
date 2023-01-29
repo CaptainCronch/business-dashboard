@@ -1,0 +1,9 @@
+@use "vars" as *;
+
+.area.middle-area {
+    background-color: $activity-background;
+
+    * {
+        color: black;
+    }
+}

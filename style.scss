@@ -1,6 +1,9 @@
 @use "vars" as *;
 @use "right" as *;
 @use "top" as *;
+@use "left" as *;
+@use "middle" as *;
+@use "right" as *;
 
 body{
     background-color: $background-color;
@@ -47,13 +50,16 @@ header{
     }
     .project-nav {
         justify-content: right;
+        align-items: flex-end;
         
         a {
             margin-right: 50px;
         }
         img {
             height: 50px;
-            display: none;
+            align-self: flex-end;
+            position: relative;
+            top: 10px;
         }
     }
 }
@@ -64,8 +70,9 @@ main{
 }
 
 .area {
-    display: block;
     padding: 30px 100px;
+    flex-shrink: 1;
+    flex-basis: 20%;
 }
 
 .top-bar {
@@ -77,6 +84,10 @@ main{
     h3 {
         margin-right: auto;
         font-size: 2em;
+    }
+    a, p {
+        margin-left: 15px;
+        font-size: 1.2em;
     }
 
 }
