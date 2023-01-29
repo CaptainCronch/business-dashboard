@@ -7,6 +7,7 @@
 
 body{
     background-color: $background-color;
+    width: 100%;
 }
 
 header{
@@ -91,3 +92,96 @@ main{
     }
 
 }
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.suzzie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1{
+        font-size: 2.5em;
+        padding: 25px;
+    }
+
+    i{
+        font-size: 2.5em;
+    }
+
+}
+
+.card{
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    background-color: $widget-yellow-background;
+    padding: 25px;
+    border-radius: 25px;
+    width: 90%;
+
+    .divider{
+        width: 98%;
+        height: 1px;
+        background-color: black;
+        margin: auto;
+    }
+
+    .v-divider{
+        width: 2px;
+        background-color: black;
+    }
+
+    .info{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }    
+        img{
+            width: 33%;
+        }
+
+        .employee-info{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            
+            p{
+                font-size: 1.5em;
+                padding: 10px;
+            }
+        }
+
+        .progress{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            p{
+                font-size: 2.5em;
+            }
+
+            .bar{
+                background-color: $background-color;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .hours-log{
+                height: 50px;
+                width: 90%;
+                background: linear-gradient(90deg, rgba(1, 1, 1, 0) 0%, white 100%);
+            }
+
+            .estimated {
+                height: 50px;
+                width: 10%;
+                background-image: linear-gradient(135deg, #858485 25%, rgba(1, 1, 1, 0) 25%, rgba(1, 1, 1, 0) 50%, #858485 50%, #858485 75%, rgba(1, 1, 1, 0) 75%, rgba(1, 1, 1, 0) 100%);
+            }
+        }
+    }
