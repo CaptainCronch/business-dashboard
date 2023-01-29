@@ -46,7 +46,7 @@ head, script {
   margin-right: 50px;
   padding: 20px;
   background-color: #111012;
-  color: #cbcacb;
+  color: #e7c8fc;
   box-shadow: 0px 0px 100px -80px rgba(255, 255, 255, 0.6) inset;
 }
 .widget .title {
@@ -179,6 +179,85 @@ head, script {
 }
 .area.left-area * {
   color: white;
+}
+.area.left-area a {
+  color: #e7c8fc;
+}
+.area.left-area .event-list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: baseline;
+}
+.area.left-area .event-list .event {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 20px 0;
+  border-bottom: 1px solid #858485;
+}
+.area.left-area .event-list .event .time {
+  color: #e7c8fc;
+  margin: 0 20px 0 30px;
+}
+.area.left-area .event-list .event h4 {
+  margin-left: 20px;
+}
+.area.left-area .event-list .event img {
+  width: 50px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.area.left-area .event-list .event .color-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin: 0 20px 0 30px;
+  background-color: white;
+}
+.area.left-area .event-list .event .one {
+  background-color: #fd65d2;
+}
+.area.left-area .event-list .event .two {
+  background-color: #85f1ed;
+}
+.area.left-area .event-list .event .three {
+  background-color: #ffd601;
+}
+.area.left-area .event-list .event .active {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: baseline;
+  flex-grow: 1;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-image: linear-gradient(135deg, #c17fff 8.33%, rgba(1, 1, 1, 0) 8.33%, rgba(1, 1, 1, 0) 50%, #c17fff 50%, #c17fff 58.33%, rgba(1, 1, 1, 0) 58.33%, rgba(1, 1, 1, 0) 100%);
+  background-size: 25.46px 25.46px;
+}
+.area.left-area .event-list .event .active a {
+  margin-left: auto;
+  padding-right: 30px;
+  color: white;
+}
+.area.left-area .event-list .event .active .color-circle {
+  margin-left: 5px;
+}
+.area.left-area .event-list .add-meeting {
+  background-color: #9529ff;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+}
+.area.left-area .event-list .event.active {
+  padding: 0;
+}
+.area.left-area .event-list .event:last-child {
+  border: none;
 }
 
 .area.middle-area {
