@@ -21,11 +21,61 @@ head, script {
 }
 
 .area.right-area {
-  flex-grow: 1.5;
+  flex-grow: 2;
   background-color: white;
 }
 .area.right-area * {
   color: black;
+}
+.area.right-area .top-bar .icon {
+  width: 1em;
+}
+.area.right-area .top-bar p {
+  margin: 0 20px 0 5px;
+  color: #858485;
+}
+.area.right-area table {
+  display: table;
+  width: 100%;
+}
+.area.right-area table td, .area.right-area table th {
+  display: table-cell;
+  font-size: 1.2em;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 2px solid #858485;
+  border-collapse: collapse;
+}
+.area.right-area table td:first-child, .area.right-area table th:first-child {
+  font-size: 1.5em;
+  text-align: left;
+}
+.area.right-area table tr {
+  display: table-row;
+  width: 100%;
+}
+.area.right-area table thead {
+  width: 100%;
+  display: table-header-group;
+}
+.area.right-area table thead tr {
+  width: 100%;
+}
+.area.right-area table thead tr th {
+  color: #858485;
+  font-size: 1.2em;
+}
+.area.right-area table tbody {
+  display: table-row-group;
+  width: 100%;
+}
+.area.right-area table colgroup {
+  display: table-column-group;
+}
+.area.right-area table col {
+  display: table-column;
+  text-align: left;
+  display: none;
 }
 
 .area.top-area {
@@ -58,8 +108,8 @@ head, script {
   margin-bottom: 20px;
 }
 .widget .title .color-square {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.2em;
+  height: 1.2em;
   border-radius: 5px;
   margin-right: 15px;
 }
@@ -76,7 +126,7 @@ head, script {
   background-color: rgb(254, 137, 27);
 }
 .widget .title h4 {
-  font-size: 2em;
+  font-size: 1.5em;
   display: block;
 }
 .widget .time {
@@ -86,7 +136,7 @@ head, script {
   margin-bottom: 20px;
 }
 .widget .time .hours {
-  font-size: 2em;
+  font-size: 1.5em;
   display: block;
 }
 .widget .time .subtitle {
@@ -175,7 +225,7 @@ head, script {
 
 .area.left-area {
   background-color: #ba72fe;
-  flex-grow: 1.5;
+  flex-grow: 2;
 }
 .area.left-area * {
   color: white;
@@ -269,7 +319,7 @@ head, script {
 }
 .area.middle-area .top-bar a {
   color: #858485;
-  font-size: 2em;
+  font-size: 1.5em;
   align-self: flex-end;
 }
 .area.middle-area .pie-chart {
@@ -418,7 +468,7 @@ main {
 }
 .top-bar h3 {
   margin-right: auto;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .top-bar a, .top-bar p {
   margin-left: 15px;

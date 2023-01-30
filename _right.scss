@@ -1,10 +1,65 @@
 @use "vars" as *;
 
 .area.right-area {
-    flex-grow: 1.5;
+    flex-grow: 2;
     background-color: white;
 
     * {
         color: black;
+    }
+
+    .top-bar {
+        .icon {
+            width: 1em;
+        }
+        p {
+            margin: 0 20px 0 5px;
+            color: $text-color-gray;
+        }
+    }
+
+    table {
+        display: table;
+        width: 100%;
+
+        td, th {
+            display: table-cell;
+            font-size: 1.2em;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid $text-color-gray;
+            border-collapse: collapse;
+        }
+        td:first-child, th:first-child {
+            font-size: 1.5em;
+            text-align: left;
+        }
+        tr {
+            display: table-row;
+            width: 100%;
+        }
+        thead {
+            width: 100%;
+            display: table-header-group;
+            tr {
+                width: 100%;
+                th {
+                    color: $text-color-gray;
+                    font-size: 1.2em;
+                }
+            }
+        }
+        tbody {
+            display: table-row-group;
+            width: 100%;
+        }
+        colgroup {
+            display: table-column-group;
+        }
+        col {
+            display: table-column;
+            text-align: left;
+            display: none;
+        }
     }
 }
