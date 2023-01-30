@@ -21,7 +21,7 @@ head, script {
 }
 
 .area.right-area {
-  flex-grow: 2;
+  flex-grow: 1.5;
   background-color: white;
 }
 .area.right-area * {
@@ -175,7 +175,7 @@ head, script {
 
 .area.left-area {
   background-color: #ba72fe;
-  flex-grow: 2;
+  flex-grow: 1.5;
 }
 .area.left-area * {
   color: white;
@@ -214,7 +214,7 @@ head, script {
   width: 10px;
   height: 10px;
   border-radius: 20px;
-  margin: 0 20px 0 30px;
+  margin: 20px 20px 20px 30px;
   background-color: white;
 }
 .area.left-area .event-list .event .one {
@@ -243,7 +243,7 @@ head, script {
   color: white;
 }
 .area.left-area .event-list .event .active .color-circle {
-  margin-left: 5px;
+  margin: 10px 20px 10px 10px;
 }
 .area.left-area .event-list .add-meeting {
   background-color: #9529ff;
@@ -262,9 +262,88 @@ head, script {
 
 .area.middle-area {
   background-color: #f4faff;
+  flex-grow: 1;
 }
 .area.middle-area * {
   color: black;
+}
+.area.middle-area .top-bar a {
+  color: #858485;
+  font-size: 2em;
+  align-self: flex-end;
+}
+.area.middle-area .pie-chart {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.area.middle-area .pie-chart img {
+  flex-grow: 1;
+  margin-right: 50px;
+}
+.area.middle-area .pie-chart .selectors {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: flex-end;
+}
+.area.middle-area .pie-chart .selectors .active a {
+  color: black;
+}
+.area.middle-area .pie-chart .selectors .color-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: black;
+  vertical-align: middle;
+}
+.area.middle-area .pie-chart .selectors a {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #858485;
+}
+.area.middle-area .pie-chart .selectors #last {
+  margin: 0;
+}
+.area.middle-area .label-list {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.area.middle-area .label-list .label {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.area.middle-area .label-list .label .color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.area.middle-area .label-list .label p {
+  font-size: 1.2em;
+}
+.area.middle-area .label-list .label p:last-child {
+  margin-left: auto;
+}
+.area.middle-area .label-list .label.one .color-circle {
+  background-color: #000000;
+}
+.area.middle-area .label-list .label.two .color-circle {
+  background-color: #ffcc01;
+}
+.area.middle-area .label-list .label.three .color-circle {
+  background-color: #e9f194;
+}
+.area.middle-area .label-list .label.four .color-circle {
+  background-color: #ef733f;
+}
+.area.middle-area .label-list .label.five .color-circle {
+  background-color: #e5cefd;
 }
 
 body {

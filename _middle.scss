@@ -2,8 +2,91 @@
 
 .area.middle-area {
     background-color: $activity-background;
+    flex-grow: 1;
 
     * {
         color: black;
+    }
+
+    .top-bar {
+        a {
+            color: $text-color-gray;
+            font-size: 2em;
+            align-self: flex-end;
+        }
+    }
+
+    .pie-chart {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        img {
+            flex-grow: 1;
+            margin-right: 50px;
+        }
+
+        .selectors {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: start;
+            align-items: flex-end;
+
+            .active {
+                a {
+                    color: black;
+                }
+            }
+            .color-circle {
+                width: 10px;
+                height: 10px;
+                border-radius: 20px;
+                margin-right: 10px;
+                background-color: black;
+                vertical-align: middle;
+            }
+            a {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+                color: $text-color-gray;
+            }
+            #last {
+                margin: 0;
+            }
+        }
+    }
+
+    .label-list {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .label {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .color-circle {
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                margin-right: 20px;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            p:last-child {
+                margin-left: auto;
+            }
+        }
+        .label.one .color-circle {background-color: #000000;}
+        .label.two .color-circle {background-color: #ffcc01;}
+        .label.three .color-circle {background-color: #e9f194;}
+        .label.four .color-circle {background-color: #ef733f;}
+        .label.five .color-circle {background-color: #e5cefd;}
     }
 }

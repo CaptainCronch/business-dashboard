@@ -2,7 +2,7 @@
 
 .area.left-area {
     background-color: $widget-purple-background;
-    flex-grow: 2;
+    flex-grow: 1.5;
 
     * {
         color: white;
@@ -46,7 +46,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 20px;
-                margin: 0 20px 0 30px;
+                margin: 20px 20px 20px 30px;
                 background-color: white;
             }
             .one {background-color: #fd65d2;}
@@ -62,8 +62,17 @@
                 padding: 15px 20px;
                 margin: 10px 0;
 
-                background-image: linear-gradient(135deg, $schedule-stripes 8.33%, $transparent 8.33%, $transparent 50%, $schedule-stripes 50%, $schedule-stripes 58.33%, $transparent 58.33%, $transparent 100%);
-background-size: 25.46px 25.46px;
+                background-image: linear-gradient(135deg,
+                        $schedule-stripes 8.33%,
+                        $transparent 8.33%,
+                        $transparent 50%,
+                        $schedule-stripes 50%,
+                        $schedule-stripes 58.33%,
+                        $transparent 58.33%,
+                        $transparent 100%
+                );
+
+                background-size: 25.46px 25.46px;
 
                 a {
                     margin-left: auto;
@@ -72,7 +81,7 @@ background-size: 25.46px 25.46px;
                 }
 
                 .color-circle {
-                    margin-left: 5px;
+                    margin: 10px 20px 10px 10px;
                 }
             }
         }
