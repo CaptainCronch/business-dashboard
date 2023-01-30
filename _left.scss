@@ -8,6 +8,13 @@
         color: white;
     }
 
+    .top-bar {
+        .active {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+    }
+
     a {
         color: $text-color-light-gray;
     }

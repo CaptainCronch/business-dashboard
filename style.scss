@@ -13,7 +13,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 30px 100px;
+    margin: 30px 80px;
     align-items: baseline;
     height: 50px;
 
@@ -62,6 +62,10 @@ header{
             position: relative;
             top: 10px;
         }
+        .active {
+            color: white;
+            border-bottom: 3px solid white;
+        }
     }
 }
 
@@ -71,7 +75,7 @@ main{
 }
 
 .area {
-    padding: 30px 100px;
+    padding: 30px 80px;
     flex-shrink: 1;
     flex-basis: 20%;
 }

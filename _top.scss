@@ -152,3 +152,39 @@
 .widget:last-child {
     margin-right: 0;
 }
+
+.widget.primary {
+    background-color: $widget-yellow-background;
+    box-shadow: -200px -200px 100px -200px rgba(0,0,0,0.8) inset;
+    * {
+        color: black;
+    }
+
+    .progress-bar {
+        #progress-made {
+            background-color: white;
+            background: linear-gradient(90deg, $transparent 0%, black 100%); 
+        }
+        .progress-left {
+            background-image: linear-gradient(135deg, white 25%,
+                    $transparent 25%,
+                    $transparent 50%,
+                    white 50%,
+                    white 75%,
+                    $transparent 75%,
+                    $transparent 100%
+            );
+            
+            background-size: 5.66px 5.66px;
+        }
+    }
+
+    .date-box {
+        .subtitle {
+            color: $text-color-gray
+        }
+        .date {
+            color: black;
+        }
+    }
+}
